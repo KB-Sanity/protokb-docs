@@ -1,0 +1,17 @@
+name: Publish to gh-pages
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Fetch latest changes
+      uses: actions/checkout@v2
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: src/.vuepress/dist

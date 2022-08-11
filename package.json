@@ -1,0 +1,19 @@
+{
+  "name": "protokb-docs",
+  "version": "0.0.1",
+  "description": "Proto KB docs",
+  "main": "index.js",
+  "authors": {
+    "name": "i7d3v3l0p3r",
+    "email": "i7d3v3l0p3r@yandex.ru"
+  },
+  "repository": "git@github.com:KB-Sanity/protokb-plugin.git",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
